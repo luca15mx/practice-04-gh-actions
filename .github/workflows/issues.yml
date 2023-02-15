@@ -1,0 +1,6 @@
+name: Show Issues
+on: workflow_dispatch
+jobs:
+  show-issues:
+    - name: Show Issues
+      run: echo "${{ issues }}"
