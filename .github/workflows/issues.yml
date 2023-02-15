@@ -1,6 +1,8 @@
 name: Show Issues
-on: workflow_dispatch
+on: issues
 jobs:
   show-issues:
-    - name: Show Issues
-      run: echo "${{ issues }}"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show Issues
+        run: echo "${{ issues }}"
